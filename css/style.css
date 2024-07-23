@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555 ;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items:  center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+
+
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.temp {
+    transition: transform 0.3s, opacity 0.3s;
+}
+.temp:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* Other CSS remains unchanged */
+
+.search input, .search button {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Search Input Hover */
+.search input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #d0f9f7;
+}
+
+/* Search Button Hover */
+.search button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #c8f7f3;
+}
+
+.search button img {
+    transition: transform 0.3s;
+}
+
+/* Search Button Image Hover */
+.search button:hover img {
+    transform: scale(1.2);
+}
+
+.weather-icon {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+/* Enlargement effect on hover */
+.weather-icon:hover {
+    transform: scale(1.2); /* Enlarges the image by 20% */
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EBF4F6;
+    
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(145deg, #00feba, #071952);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+/* Search Section */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input, .search button {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Search Input Hover */
+.search input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #d0f9f7;
+}
+
+/* Search Button Hover */
+.search button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #c8f7f3;
+}
+
+.search button img {
+    transition: transform 0.3s;
+}
+
+/* Search Button Image Hover */
+.search button:hover img {
+    transform: scale(1.2);
+}
+
+/* Weather Section */
+.weather-icon {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+/* Weather Icon Hover */
+.weather-icon:hover {
+    transform: scale(1.2); /* Enlarges the image by 20% */
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for scaling and color change */
+}
+
+/* Weather Temperature Hover */
+.weather h1:hover {
+    transform: scale(1.1); /* Slightly enlarges the temperature */
+    color: #071952; /* Change color on hover */
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for scaling and color change */
+}
+
+/* Weather City Hover */
+.weather h2:hover {
+    transform: scale(1.05); /* Slightly enlarges the city name */
+    color: #071952; /* Change color on hover */
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for scaling and color change */
+}
+
+/* Column Hover */
+.col:hover {
+    transform: scale(1.05); /* Slightly enlarges the column */
+    color: #071952; /* Change color on hover */
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+/* Column Image Hover */
+.col:hover img {
+    transform: scale(1.2); /* Enlarges the image by 20% */
+}
+
+.col p {
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for scaling and color change */
+}
+
+/* Hover Effects for Humidity and Wind Speed */
+.col p:hover {
+    transform: scale(1.1); /* Slightly enlarges the text */
+    color: #071952; /* Change color on hover */
+}
+
+/* Error and Loading Sections */
+.error, .loading {
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+/* Loading Text Hover */
+.loading:hover {
+    opacity: 0.7; /* Slightly fade out the loading text on hover */
+}
+
+/* Temp Hover */
+.temp {
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for scaling and opacity */
+}
+
+/* Temp Hover */
+.temp:hover {
+    transform: scale(1.1); /* Slightly enlarges the temperature */
+    opacity: 0.7; /* Slightly fade out the temperature */
+}
